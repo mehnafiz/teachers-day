@@ -1,0 +1,80 @@
+body{
+    background-color:aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    background-color: rgb(129, 172, 186);
+    text-align: center;
+    padding: 1rem;
+}
+#best-faculty{
+    font-family: "Caveat", cursive;
+    padding: 2em;
+    text-align: center;
+}
+#best-faculty > p{
+    font-size: 1.8rem;
+    font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    box-shadow: 10px 10px black;
+}
+.teacher {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.teacher-info {
+    margin-right: 2em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    float: left;
+}
+.teacher-info img {
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.teacher-message h4{
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+.teacher-message p{
+    font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+@media(max-width:640px){
+    body{
+        flex-direction: column;
+        text-align: center;
+    }
+   .teacher-info{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+   }
+   .teacher-message h4{
+    padding-top: 10px;
+    margin-top: 10px;
+   }
+}
