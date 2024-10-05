@@ -46,10 +46,14 @@ header{
     float: left;
 }
 .teacher-info img {
-    border: 1px solid black;
+    border: 2px solid black;
     width: 90px;
     height: 90px;
     border-radius: 50%;
+}
+.teacher-info img:hover{
+    border-color: #34a853;
+    box-shadow: 0 0 20px rgba(52, 168, 83, 0.5);
 }
 .teacher-message h4{
     font-family: "Caveat", cursive;
